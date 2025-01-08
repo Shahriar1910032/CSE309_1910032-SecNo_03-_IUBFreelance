@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div id="navbar" class="obj-width">
+      <a href="index.php"><img src="assets/logo.png" class="logo" alt="" /></a>
+      <ul id="menu">
+        <li><a href="index.php">Home</a></li>
+        <li><a href="browse-jobs.php">Browse Jobs</a></li>
+        <li><a href="job-listing.html">List Jobs</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <a href="signup.html">
+          <button id="w-btn">Join Now</button>
+        </a>
+      </ul>
+      <i id="bar" class="bx bx-menu"></i>
+    </div>
+  </header>
+
+  <div class="login-page">
+    <div class="center-wrapper">
+      <div class="login-container">
+        <h2>Login</h2>
+        <form action="login.php" method="POST">
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+
+          <!-- Role Selection -->
+          <div class="input-group">
+            <label for="role">Select Role</label>
+            <select name="role" id="role" required>
+              <option value="" disabled selected>Select your role</option>
+              <option value="buyer">Buyer</option>
+              <option value="seller">Seller</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn">Login</button>
+          <div class="signup-text">
+            Don't have an account? <a href="signup.html">Sign up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <div class="obj-width">
+      <div class="top">
+        <div>
+          <img src="assets/logo.png" class="logo" alt="" />
+          <p>Search your desired jobs.</p>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/"><i class="bx bxl-youtube"></i></a>
+          <a href="https://github.com/dashboard"><i class="bx bxl-github"></i></a>
+          <a href="https://github.com/dashboard"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="https://github.com/dashboard"><i class="bx bxl-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div>
+          <h3>Main Menu</h3>
+          <a href="index.php">Home</a>
+          <a href="browse-jobs.php">Browse Job</a>
+          <a href="contact.html">Contact</a>
+          <a href="signup.html">Join Now</a>
+        </div>
+        <div>
+          <h3>Community</h3>
+          <a href="https://www.youtube.com/">Youtube</a>
+          <a href="https://github.com/dashboard">GitHub</a>
+          <a href="https://Twitter.com/dashboard">Twitter</a>
+          <a href="#">Project</a>
+        </div>
+        <div>
+          <h3>Help</h3>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div>
+          <h3>Policy</h3>
+          <a href="terms.html">Terms of Services</a>
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

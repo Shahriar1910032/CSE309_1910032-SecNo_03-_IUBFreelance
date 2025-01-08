@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freelancing Website | Coding Shahriar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div id="navbar" class="obj-width">
+      <a href="index.php"><img src="assets/logo.png" class="logo" alt="" /></a>
+      <ul id="menu">
+        <li><a href="index.php">Home</a></li>
+        <li><a href="browse-jobs.php">Browse Jobs</a></li>
+        <li><a href="job-listing.html">List Jobs</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <a href="signup.html">
+          <button id="w-btn">Join Now</button>
+        </a>
+
+      </ul>
+      <i id="bar" class="bx bx-menu"></i>
+    </div>
+  </header>
+  <section class="job-listing sec-sapce">
+    <div class="obj-width">
+      <h1>Post a Job</h1>
+      <p>Fill out the form below to list a new job opportunity and connect with talented freelancers.</p>
+
+      <form id="job-form" action="submit-job.php" method="POST" class="job-form">
+        <div class="form-group">
+          <label for="user-id">User ID</label>
+          <input type="number" id="user-id" name="user_id" required placeholder="Enter your user ID">
+        </div>
+
+        <div class="form-group">
+          <label for="job-title">Job Title</label>
+          <input type="text" id="job-title" name="job_title" required placeholder="Enter the job title">
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category" name="category" required>
+            <option value="" disabled selected>Select a category</option>
+            <option value="web-dev">Web Project</option>
+            <option value="graphic-design">Assigment</option>
+            <option value="writing">Writing</option>
+            <option value="marketing">Marketing</option>
+            <option value="consulting">Tuition</option>
+            <option value="Web-design">Website Design</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="skills">Skills Required</label>
+          <input type="text" id="skills" name="skills" placeholder="e.g., HTML, CSS, JavaScript">
+        </div>
+
+        <div class="form-group">
+          <label for="description">Job Description</label>
+          <textarea id="description" name="description" rows="5" required
+            placeholder="Describe the job details here"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="budget">Budget (৳)</label>
+          <input type="number" id="budget" name="budget" required placeholder="Enter the budget in BDT">
+        </div>
+
+        <div class="form-group">
+          <label for="deadline">Deadline</label>
+          <input type="date" id="deadline" name="deadline" required>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="g-btn">Submit Job</button>
+        </div>
+        <div id="form-message" style="display: none; color: green; margin-top: 15px;"></div>
+      </form>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="obj-width">
+      <div class="top">
+        <div>
+          <img src="assets/logo.png" class="logo" alt="" />
+          <p>Search your desiered jobs.</p>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/"><i class="bx bxl-youtube"></i></a>
+          <a href="https://github.com/dashboard"><i class="bx bxl-github"></i></a>
+          <a href="https://github.com/dashboard"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="https://github.com/dashboard"><i class="bx bxl-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div>
+          <h3>Main Menu</h3>
+          <a href="index.php">Home</a>
+          <a href="browse-jobs.php">Browse Job</a>
+          <a href="contact.html">Contact</a>
+          <a href="signup.html">Join Now</a>
+        </div>
+        <div>
+          <h3>Community</h3>
+          <a href="https://www.youtube.com/">Youtube</a>
+          <a href="https://github.com/dashboard">GitHub</a>
+          <a href="https://Twitter.com/dashboard">Twitter</a>
+          <a href="#">Project</a>
+        </div>
+        <div>
+          <h3>Help</h3>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div>
+          <h3>Policy</h3>
+          <a href="terms.html">Terms of Services</a>
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
